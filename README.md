@@ -1,5 +1,5 @@
-- BROKER sử dụng trong bài thực hành là localhost, chạy trực tiếp trên máy cá nhân
-Môi trường trước khi chạy các bài thực hành:
+BROKER sử dụng trong bài thực hành là localhost, chạy trực tiếp trên máy cá nhân
+ Môi trường trước khi chạy các bài thực hành:
  - Python 3.x
  - Thư viện paho-mqtt
  - Cấu hình MQTT broker
