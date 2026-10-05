@@ -23,7 +23,7 @@ mosquitto -v
 
 Lệnh này giúp mở cổng `1883` trên `localhost`, để các client MQTT có thể kết nối với broker.
 
-## 2. Thực hiện bài 1
+## 2. Thực hiện bài 1: Ứng dụng gửi và nhận thông điệp MQTT cơ bản
 
 ### Bước thực hiện
 
@@ -65,7 +65,7 @@ Payload : hello MQTT
 Time : 14:20:30
 ```
 
-## 3. Thực hiện bài 2
+## 3. Thực hiện bài 2:Mô phỏng cảm biến nhiệt độ và độ ẩm bằng MQTT
 
 ### Bước thực hiện
 
@@ -104,7 +104,7 @@ Humidity: 54.2 %
 ==== CANH BAO: Nhiet do cao ===
 ```
 
-## 4. Thực hiện bài 3
+## 4. Thực hiện bài 3:Mô phỏng hệ thống điều khiển đèn thông minh qua MQTT
 
 ### Bước thực hiện
 
