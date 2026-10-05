@@ -148,20 +148,4 @@ Trang thai nhan duoc:
 {"device_id": "fan01", "status": "ON"}
 ```
 
-## 5. Kết luận chung
 
-Ba bài thực hành trên minh họa rõ cách giao tiếp MQTT theo mô hình publish/subscribe:
-
-- Bài 1: gửi và nhận message đơn giản
-- Bài 2: thu thập và cảnh báo dữ liệu cảm biến
-- Bài 3: điều khiển thiết bị và phản hồi trạng thái
-
-Nhờ có broker MQTT chạy trên `localhost`, các client Python có thể trao đổi dữ liệu nhanh chóng và dễ dàng trong môi trường máy tính cá nhân.
-
-## 6. Tổng kết
-
-- Dự án đã hoàn thành 3 bài thực hành MQTT cơ bản.
-- Publisher/subscriber hoạt động đúng theo mô hình truyền tin.
-- Sensor/monitor có thể theo dõi dữ liệu thời gian thực.
-- Controller/device có thể gửi lệnh và nhận phản hồi trạng thái.
-- Đây là nền tảng để phát triển các ứng dụng IoT phức tạp hơn trong tương lai.
