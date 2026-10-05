@@ -19,7 +19,7 @@ def on_message(client, userdata, message):
     Humidity: {PAYLOAD["humidity"]} %
     """)
     if PAYLOAD["temperature"] > 35: print("====  CANH BAO: Nhiet do cao === \n\n")
-    if PAYLOAD["humidity"] < 40: print("CANH BAO: Do am thap")
+    if PAYLOAD["humidity"] < 40: print("====  CANH BAO: Do am thap === \n\n")
 def main():
     client = mqtt.Client(callback_api_version=mqtt.CallbackAPIVersion.VERSION2)
     client.on_connect = on_connect
