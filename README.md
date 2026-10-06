@@ -1,6 +1,6 @@
 # TH1_MQTT - Hướng dẫn chạy 3 bài thực hành MQTT
 
-BROKER sử dụng trong bài thực hành là `localhost`, chạy trực tiếp trên máy cá nhân.
+BROKER sử dụng trong bài thực hành là `localhost` dùng Mosquitto để chạy, chạy trực tiếp trên máy cá nhân.
 
 ## 1. Môi trường trước khi chạy các bài thực hành
 
@@ -8,6 +8,7 @@ BROKER sử dụng trong bài thực hành là `localhost`, chạy trực tiếp
 - Thư viện `paho-mqtt`
 - Cấu hình MQTT broker
 - Một IDE hoặc VS Code
+- Cài đặt Mosquitto, link tải "https://mosquitto.org/download" (file mosquitto-2.1.2-install-windows-x64.exe cho bản Window)
 
 Các lệnh cần chạy trên terminal:
 
@@ -49,20 +50,23 @@ python subscriber_bai1.py
 
 Sau đó ở terminal publisher nhập:
 ```text
-hello MQTT
+Xin chao tu client Python MQTT - B23DCCN653 - Bui Vinh Phuc
 ```
 
 ### Kết quả bài 1
 
 - Bên publisher đã gửi được dữ liệu nhiều lần lên broker.
 - Bên subscriber nhận được dữ liệu từ broker và in ra kết quả gồm `TOPIC`, `PAYLOAD`, và thời gian nhận.
-
-Ví dụ đầu ra bên subscriber:
+- Khi bên publisher gửi
 ```text
-Nhan duoc message
-Topic : iot/lab/message
-Payload : hello MQTT
-Time : 14:20:30
+Xin chao tu client Python MQTT - B23DCCN653 - Bui Vinh Phuc
+```
+- Bên Subcreiber sẽ in ra
+```text
+Nhan duoc message:
+Topic: iot/lab/message
+Payload: Xin chao tu client Python MQTT - B23DCCN653 - Bui Vinh Phuc
+Time: 10:15:20
 ```
 
 ## 3. Thực hiện bài 2:Mô phỏng cảm biến nhiệt độ và độ ẩm bằng MQTT
@@ -91,8 +95,8 @@ python monitor_subscriber_bai2.py
 
 ### Kết quả bài 2
 
-- Bên sensor publisher đã gửi dữ liệu cảm biến liên tục lên broker.
-- Bên monitor subscriber đã nhận dữ liệu từ broker và hiển thị thông tin nhiệt độ, độ ẩm và trạng thái cảnh báo.
+- Bên sensor publisher 2 sensor là sensor01, sensor02 gửi dữ liệu cảm biến liên tục lên broker.
+- Bên monitor subscriber đã nhận dữ liệu từ broker và hiển thị thông tin nhiệt độ, độ ẩm và trạng thái cảnh báo nếu có.
 - Nếu `temperature > 35` thì in cảnh báo `Nhiệt độ cao`.
 - Nếu `humidity < 40` thì in cảnh báo `Độ ẩm thấp`.
 
